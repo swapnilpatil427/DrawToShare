@@ -15,7 +15,7 @@ Install DrawToShare git clone https://github.com/swapnilpatil427/DrawToShare.git
 Enter the DrawToShare folder cd DrawToShare
 
 # Run 
-bower install; npm install
+bower install ; npm install;
 # start
 npm start
 

@@ -1,0 +1,295 @@
+[class*="entypo-"]:before {
+  font-family: "entypo", sans-serif;
+}
+#draw {
+  height:100% !important;
+  width: 100% !important;
+}
+aside {
+  z-index: 9999;
+  margin-left: 5px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+.container {
+  margin: 0 auto;
+  padding: 20px 50px;
+  background: white;
+}
+
+#sticky-social {
+  left: 0;
+  position: fixed;
+  top: 100px;
+}
+
+#sticky-social a {
+  background: #333;
+  color: #fff;
+  display: block;
+  height: 60px;
+  font: 16px "Open Sans", sans-serif;
+  line-height: 35px;
+  position: relative;
+  text-align: center;
+  width: 60px;
+}
+
+
+
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+}
+
+
+#sticky-social a:hover a{
+
+}
+
+#sticky-social a:hover fieldset {
+  left: 100%;
+}
+
+#sticky-social a fieldset {
+  line-height: 60px;
+  left: -405px;
+  position: absolute;
+  text-align: center;
+  width: 350px;
+  min-height: 60px;
+  top: 0px;
+}
+
+#sticky-social a[class*="facebook"],
+#sticky-social a[class*="facebook"]:hover {
+  background: rgb(0, 242, 17);
+}
+
+#sticky-social a[class*="facebook"] fieldset {
+  background: rgb(245, 245, 251);
+}
+#sticky-social a[class*="gplus"],
+#sticky-social a[class*="gplus"]:hover{
+  background: #dd1318;
+}
+#sticky-social a[class*="gplus"] fieldset {
+  background: rgb(245, 245, 251);
+}
+
+#sticky-social a[class*="linkedin"],
+#sticky-social a[class*="linkedin"]:hover,
+#sticky-social a[class*="linkedin"] fieldset {
+  background: #007bb6;
+}
+
+#sticky-social a[class*="instagrem"],
+#sticky-social a[class*="instagrem"]:hover,
+#sticky-social a[class*="instagrem"] fieldset {
+  background: #7300cc;
+}
+
+#sticky-social a[class*="stumbleupon"],
+#sticky-social a[class*="stumbleupon"]:hover,
+#sticky-social a[class*="stumbleupon"] fieldset {
+  background: #eb4924;
+}
+
+#sticky-social a[class*="pinterest"],
+#sticky-social a[class*="pinterest"]:hover,
+#sticky-social a[class*="pinterest"] fieldset {
+  background: #cc2127;
+}
+
+#sticky-social a[class*="flickr"],
+#sticky-social a[class*="flickr"]:hover,
+#sticky-social a[class*="flickr"] fieldset {
+  background: #ff0084;
+}
+
+#canvasContainer{
+  position:relative;
+  bottom:0px;
+  overflow: hidden;
+  background-repeat:no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+
+  background-color: white;
+}
+
+#sticky-social a[class*="tumblr"],
+#sticky-social a[class*="tumblr"]:hover,
+#sticky-social a[class*="tumblr"] fieldset {
+  background: #32506d;
+}
+
+.float-right {
+  float: right;
+}
+
+
+.hide {
+  height: 1px;
+  width : 1px;
+  z-index : -999;
+}
+
+.sliderbar {
+  margin-top: 9% !important;
+}
+
+.sideicon-fa {
+  font-size:36px;
+  color:white;
+  margin-top: 12px;
+}
+
+.slidervalue {
+  float: right;
+  height:60px;
+  width:60px;
+}
+
+.selected {
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 2px solid rgba(81, 203, 238, 1);
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.1); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.canvasDiv {
+  background-color: #fff; /* Fallback color */
+
+}
+
+/* social icons starts here */
+
+.social {
+  overflow: auto;
+}
+
+.social li {
+  list-style-type: none;
+  float: left;
+}
+
+.social li a i {
+  background: #205D7A;
+  color: #ccc;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  font-size: 25px;
+  text-align: center;
+  margin-right: 10px;
+  transition: all 0.2s ease-in-out;
+}
+.fa-envelope {
+  background:#fff !important;
+}
+.fa-linkedin {
+  background:#007bb6 !important;
+}
+.fa-twitter {
+  background:#00aced !important;
+}
+.google-plus {
+  background:#dd4b39 !important;
+}
+.social li a i:hover {
+  opacity: .7;
+}
+
+.tooltip-inner {
+  min-width: 150px; //the minimum width
+}
+
+.materialpicker-colors {
+  -webkit-user-select: none;
+  user-select: none;
+  position: relative;
+  border: 1px solid #FFF;
+  border-radius: 2px;
+  display: inline-block;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.5);
+  cursor: default;
+}
+.materialpicker-colors div.selected {
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 0 4px #000;
+  border: 2px solid #FFF;
+}
+div.materialpicker-white.selected {
+  border-color: #78909C;
+}
+.colorpicker-preview {
+  width: 40px;
+  height: 40px;
+  border-radius: 2px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.materialpicker.ng-invalid .materialpicker-colors {
+  border-color: #a94442;
+  box-shadow: 0 1px 5px #a94442;
+}
+
+.rzslider {
+  margin : 0 0 0 0 !important;
+}

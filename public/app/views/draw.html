@@ -1,0 +1,67 @@
+<input type="hidden" id="chosen-value" value="000000">
+<input type="hidden" id="tools" value="{}">
+<aside id="sticky-social">
+    <ul tools-directive>
+        <li><a id="colorpicker" href="javascript:void(0)" class="entypo-twitter" ng-style="{background : activeProp.color}"
+               target="_blank" data-toggle="tooltip" data-placement="bottom" title="Change the color">
+            <i class="fa fa-paint-brush sideicon-fa">
+            </i>
+            <fieldset>
+
+                <div class="row">
+                    <div class="col-md-12" style="text-align: left;">
+                        <material-picker ng-model="activeProp.color" format="'hex'" hover-model="hoverColor"
+                                         size="size"></material-picker>
+                    </div>
+                </div>
+            </fieldset>
+        </a>
+        </li>
+        <!-- #TODO  styling the color -->
+        <li><a id="pencil" class="entypo-facebook selected" target="_blank" data-placement="bottom"
+               data-toggle="tooltip"
+               title="Pencil tool, click to select the width"><i
+                class="fa fa-pencil sideicon-fa" aria-hidden="true"></i>
+            <fieldset>
+                <div>
+                    <rzslider rz-slider-model="activeProp.pencilstrokeWidth" rz-slider-options="sliderOptions"></rzslider>
+                </div>
+            </fieldset>
+            <!--       <span>
+
+                    </span> -->
+        </a>
+        </li>
+        <li><a id="eraser" class="entypo-gplus" target="_blank"
+               data-toggle="tooltip" data-placement="bottom" title="Eraser tool, click to select the width"><i
+                class="fa fa-eraser sideicon-fa" aria-hidden="true"></i>
+
+            <fieldset>
+                <div>
+                    <rzslider rz-slider-model="activeProp.eraserstrokeWidth" rz-slider-options="sliderOptions"></rzslider>
+                </div>
+            </fieldset>
+        </a>
+        </li>
+        <li><a id="reset" href="" class="entypo-linkedin" target="_blank" data-toggle="tooltip"
+               title="Clear the Board" data-placement="bottom" ng-click="clearCanvas();"><i
+                class="fa fa-refresh sideicon-fa"
+                aria-hidden="true"></i></a></li>
+
+        <li><a  class="entypo-instagrem" taget="_blank" data-toggle="tooltip"
+               title="Share this board" data-placement="bottom" ng-click="openInvitePopUp()"><i
+                class="fa fa-share-alt  sideicon-fa"
+                aria-hidden="true"></i>
+        </a></li>
+        <!--  <li><a href="#" class="entypo-stumbleupon" target="_blank"><span>StumbleUpon</span></a></li>
+          <li><a href="#" class="entypo-pinterest" target="_blank"><span>Pinterest</span></a></li>
+          <li><a href="#" class="entypo-flickr" target="_blank"><span>Flickr</span></a></li>
+          <li><a href="#" class="entypo-tumblr" target="_blank"><span>Tumblr</span></a></li> -->
+    </ul>
+</aside>
+<div id="canvasContainer">
+    <div class="canvasDiv" style="margin-top:5px;">
+        <canvas id="canvas" resize draw></canvas>
+        <!--  <canvas canvasdraw id="draw" resize="true" keepalive="true"></canvas> -->
+    </div>
+</div>

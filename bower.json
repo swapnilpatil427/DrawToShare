@@ -1,0 +1,16 @@
+{
+  "name": "DrawToShare",
+  "version": "0.1.0",
+  "dependencies": {
+    "jquery": "~2.0.3",
+    "underscore": "~1.5.0",
+    "bootstrap": "~3.3.2",
+    "backbone": "~1.1.2",
+    "angularjs-slider": "^5.4.1",
+    "ng-dialog": "^0.6.2",
+    "font-awesome": "fontawesome#^4.6.3",
+    "paper": "^0.10.2",
+    "socket.io-client": "^1.4.8",
+    "angular-route": "^1.5.8"
+  }
+}

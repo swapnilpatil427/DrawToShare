@@ -1,0 +1,24 @@
+
+        <fieldset class="form-group">
+            <label for="formGroupExampleInput">Copy and share the url below</label>
+            <input type="text" class="form-control" ng-model="url" id="formGroupExampleInput">
+        </fieldset>
+        <br>
+        <label for="formGroupExampleInput">Invite people by email :</label>
+        <div class="form-inline">
+            <div class="form-group">
+                <label for="exampleInputEmail2">Email</label>
+                <input type="email" class="form-control" id="exampleInputEmail2" placeholder="swapnil.patil@example.com">
+            </div>
+            <button type="submit" class="btn btn-primary">Send invitation</button>
+        </div>
+        <br>
+        <div ng-if="success" class="alert alert-success">
+            Invitation Sent.
+        </div>
+        <br>
+
+        <!-- <ul class="social">
+             <li><a href="http://facebook.com/"><i class="fa fa-envelope"></i>Write a email.</a></li>
+         </ul> -->
+        <button type="button" class="btn btn-success start" ng-click="closeClicked()">Close</button>
